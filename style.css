@@ -1,0 +1,400 @@
+  html, body {
+  height: 100%;
+  width: 100%;
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+*{
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+body{
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* start header */
+.home{
+  width: 100%;
+  height: 100%;
+  background: url('images/index/home.webp') no-repeat center;
+  background-size: cover;
+}
+.header1 {
+background: white;
+padding: 10px;
+padding-left: 20px;
+padding-right: 20px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.black{
+  background: #276635;
+  overflow: hidden;
+  width: 100%;
+}
+.défil{
+  color: white;
+}
+.black > :first-child {
+  display: inline-block;                /* modèle de boîte en ligne */
+  padding-right: 2em;                   /* un peu d'espace pour la transition */
+  padding-left: 100%;                   /* placement à droite du conteneur */
+  white-space: nowrap;                  /* pas de passage à la ligne */
+  animation: black 40s infinite linear;
+  animation-name: black;       /* référence à la règle @keyframes mise en oeuvre */
+  animation-delay: 0s;                 /* valeur à ajuster suivant la longueur du message */
+  animation-iteration-count: infinite;  /* boucle continue */
+  animation-timing-function: linear;    /* pas vraiment utile ici */
+}
+@keyframes black {
+  0% {
+    transform: translate3d(0,0,0);      /* position initiale à droite */
+  }
+  100% {
+    transform: translate3d(-100%,0,0);  /* position finale à gauche */
+  }
+}
+.left {
+float: left;
+margin: 0;
+}
+
+.right {
+float: right;
+margin: 0;
+margin-left: 1vw;
+}
+.logo {
+height: 11vh;
+max-width: 100%;
+}
+.nav1{
+  line-height:13vh;
+  margin-left: 1.5vw;
+}
+.navbar1{
+  justify-content: space-between;
+}
+.navigation
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+/* end header */
+
+/* body */
+
+.div3 {
+  grid-area: 6 / 1 / 13 / 6;
+  text-align: center;
+}
+
+/* panier */
+
+.HeadCart{
+  width: 50vw;
+  margin: auto;
+  height: 5vh;
+  border: solid black 1px;
+  margin-top: 1px;
+}
+.cart{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 25vw;
+  margin-right: 24vw;
+}
+.Item{
+  width: 50vw;
+  margin: auto;
+  height: 10vh;
+  border: solid black 1px;
+  border-top:  none;
+  
+}
+.HeadCartCase{
+  display: inline-block;
+  width: 9.8vw;
+  height: 100%;
+  vertical-align:middle;
+  line-height: 5vh;
+}
+.case{
+  display: inline-block;
+  width: 9.9vw;
+  height: 100%;
+  vertical-align: middle;
+  line-height: 10vh;
+
+}
+/* end-panier */
+
+/* payement */
+.Invisible{
+  display: none;
+}
+.Visible{
+  display: block;
+}
+/* end-payement */
+
+/* Login/signup */
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* Bordered form */
+#login {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #202A29
+;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #202A29;
+    border: 1px solid #202A29;
+}
+/* Fin login/Signup*/
+
+/*debut equipe*/
+.an{
+visibility:hidden;
+}
+.shad {
+  -moz-box-shadow: 4px 4px 10px #888;  
+  -webkit-box-shadow: 4px 4px 10px #888;  
+  box-shadow:4px 4px 6px #888; 
+}
+.div3-1 {	
+	background: #F2F2F2;	
+}
+.div4 {
+  font-family: Sans-serif;
+  font-size: 19px;
+  margin-left:250px; 
+}
+.div4-1 {
+	visibility:hidden;
+}
+.orga {
+  -moz-box-shadow: 4px 4px 10px #888;  
+  -webkit-box-shadow: 4px 4px 10px #888;  
+  box-shadow:4px 4px 6px #888;
+}
+.div10 {
+  float:right  
+}
+.slideUp {
+  animation-name: slideUp;
+  animation-name: slideUp;
+  animation-duration: 2s;
+  animation-duration: 2s;
+  visibility: visible;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+/*fin equipe*/
+
+/* start-page-product */
+.picture2 {
+    display: none;
+}
+.product:hover .picture1 {
+    display: none;
+}
+.product:hover .picture2 {
+    display: block;
+}
+.product:active .picture1 {
+    display: none;
+}
+.product:active .picture2 {
+    display: block;
+}
+.productbg{
+  background-image: url('images/produit/bg.webp');
+}
+/* end-page-product */
+
+/*debut form-recrute*/
+.rec1 {
+  width: 440px; 
+}
+.rec2 {
+  width: 320px;
+}
+.rec3 {
+  width: 125px;
+}
+.rec4 {
+  width: 182px;
+}
+.rec5 {
+  width: 270px;
+}
+.rec6 {
+  width: 412px;
+}
+.rec7 {
+  width: 440px;
+}
+.mort{
+  margin-left: 505px;
+}
+.sel {
+  width: 170px;
+}
+.field {
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  -moz-box-shadow: 4px 4px 10px #888;
+    -webkit-box-shadow: 4px 4px 10px #888;
+    box-shadow:4px 4px 6px #888;
+  background-color: #F5FFFA;
+}
+.divanime {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/*Début Contact/Redirection*/
+#message
+{
+  resize: none;
+}
+
+#Redirection
+{
+  background-image: url(images/Redirection/fond.png) ;
+  height: 100vh;
+}
+
+#RedirectBox
+{
+  text-align: center;
+  position: relative;
+  top: 20%;
+  background: whitesmoke;
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#contactmap
+{
+  position:absolute;
+  top:440px;
+  right: 90px;
+
+}
+
+#containerContact{
+    width:400px;
+    margin-left: 250px;
+    margin-top:10%;
+}
+
+.ligneContact{
+  border-left: 2px solid #000;
+  display: inline-block;
+  height: 600px;
+  margin: 0 10px;
+  position:absolute;
+  top: 50px;
+}
+
+/*Fin Contact*/
+
+/*///////////////////RESPONSIVE///////////////////////*/
+/*///////////////////PAS///TOUCHE/////////////////////*/
+
+.fr{
+  padding-top: 10px;
+}
+
+
+@media (max-width: 550px) {
+  /* PAGE INDEX*/
+  .home{
+    width: 100%;
+    height: 60%;
+    background: url('images/index/home.webp') no-repeat center;
+    background-size: cover;
+}
+  
+  html{
+    font-size: 14px;
+  }
+
+  .fr{
+    padding-top: 5px;
+  }
+
+  .header1{
+    height: 85px;
+    padding-top: 15px;
+    font-weight: 10;
+  }
+
+  .right{
+    margin-left: 20px;
+  }
+
+  .logo{
+    height: 9vh;
+  }
+
+  .nav1{
+    line-height: 7vh;
+  }
+
+  /* LOGIN */
+  /* CONTACT */
+  .ligneContact{
+    display: none;
+  }
+  
+}
